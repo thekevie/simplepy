@@ -11,14 +11,14 @@ with open('README.md') as f:
     README = f.read()
 
 packages = [
-    'python-games',
+    'games',
 ]
 
 setup(
     name='python-games',
     author=author,
-    url='https://github.com/kevys/guess-the-number',
-    project_urls={"Issues": "https://github.com/kevys/guess-the-number/issues"},
+    url='https://github.com/kevys/python-games',
+    project_urls={"Issues": "https://github.com/kevys/python-games/issues"},
     version=version,
     packages=packages,
     license=license,
