@@ -4,15 +4,11 @@ numbers = [1,2,3,4,5,6,7,8,9]
 s = " "
 e = "\n"
 
-
 class guess():
-
-    def __init__(self) -> None:
-        pass
     
     def start(guess, range=None):
         if not '-' in range:
-            return 'You did not enter the right format', False
+            return print('You did not enter the right format'), False
 
         for i in str(numbers):
             if i in range:
@@ -25,11 +21,10 @@ class guess():
 
         fr, to = range.split('-')
 
-
         guess = int(guess)
         number = randint(int(fr),int(to))
 
         if guess == number:
-            return 'Congrats you picked the right number',True
+            return guess, True
         elif not guess == number:
-            return f"The number was {number}, You lose", False
+            return guess, False
