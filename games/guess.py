@@ -12,7 +12,7 @@ class guess():
     
     def start(guess, range=None):
         if not '-' in range:
-            return print(4*e+10*s+'You did not enter the right format'), False
+            return 'You did not enter the right format', False
 
         for i in str(numbers):
             if i in range:
@@ -30,6 +30,6 @@ class guess():
         number = randint(int(fr),int(to))
 
         if guess == number:
-            return print(2*e+10*s+'Congrats you picked the right number') ,True
+            return 'Congrats you picked the right number',True
         elif not guess == number:
-            return print(2*e+10*s+f"The number was {number}, You lose"), False
+            return f"The number was {number}, You lose", False
