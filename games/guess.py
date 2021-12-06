@@ -1,21 +1,14 @@
 from random import randint
 
-numbers = [1,2,3,4,5,6,7,8,9]
-s = " "
-e = "\n"
-
 class guess():
     
     def start(guess, range=None):
-        if not '-' in range:
-            return print('You did not enter the right format'), False
 
-        for i in str(numbers):
-            if i in range:
-               number = True
-        
-        if number is False:
+        if range is None:
             range = '1-10'
+
+        if not '-' in range:
+            return print('You did not enter the right format'), None
 
         range = str(range)
 

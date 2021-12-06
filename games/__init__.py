@@ -9,3 +9,7 @@ __version__ = '1.0.0'
 __description__ = 'A python package with different games'
 
 from .guess import *
+from .rps import *
+
+guess = guess.start
+rps = rps.start
