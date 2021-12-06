@@ -1,6 +1,6 @@
 # python-games
 ![GitHub](https://img.shields.io/pypi/v/python-games.svg?label=version&style=flat-square)
-![Dowloads](https://img.shields.io/pypi/dm/py-cord?color=blue)
+![Dowloads](https://img.shields.io/pypi/dm/python-games?color=blue)
 
 ## Installing
 
