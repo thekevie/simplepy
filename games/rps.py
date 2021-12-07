@@ -9,6 +9,13 @@ class rps():
 
         choice = choice.lower()
 
+        if choice == 'r':
+            choice = 'rock'
+        elif choice == 'p':
+            choice = 'paper'
+        elif choice == 's':
+            choice = 'scissor'
+
         if choice == 'rock':
             number = 1
         elif choice == 'paper':
