@@ -18,6 +18,6 @@ class guess():
         number = randint(int(fr),int(to))
 
         if guess == number:
-            return guess, True
+            return [guess, True]
         elif not guess == number:
-            return guess, False
+            return [guess, False]
