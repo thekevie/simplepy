@@ -11,10 +11,13 @@ class rps():
 
         if choice == 'r':
             choice = 'rock'
+            number = 1
         elif choice == 'p':
             choice = 'paper'
+            number = 2
         elif choice == 's':
             choice = 'scissor'
+            number = 3
 
         if choice == 'rock':
             number = 1
@@ -33,18 +36,18 @@ class rps():
             picked = 'scissor'
 
         if number == ai:
-            return print(f"You both choose {choice}"), None
+            return [f'You both choose {choice}', 'Draw', None]
 
         elif number == 3 and ai == 1:
-            return choice, picked, False
+            return [choice, picked, False]
         elif number == 1 and ai == 2:
-            return choice, picked, False
+            return [choice, picked, False]
         elif number == 2 and ai == 3:
-            return choice, picked, False
+            return [choice, picked, False]
         
         elif number == 1 and ai == 3:
-            return choice, picked, True
+            return [choice, picked, True]
         elif number == 2 and ai == 1:
-            return choice, picked, True
+            return [choice, picked, True]
         elif number == 3 and ai == 2:
-            return choice, picked, True
+            return [choice, picked, True]
