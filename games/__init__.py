@@ -5,8 +5,8 @@ Python-Games package
 
 __author__ = 'Kevys'
 __license__ = 'MIT'
-__version__ = '1.0.0'
-__description__ = 'A python package with different games'
+__version__ = '1.0.3'
+__description__ = 'A python package with different python games'
 
 from .guess import *
 from .rps import *
