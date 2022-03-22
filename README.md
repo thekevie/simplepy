@@ -1,6 +1,8 @@
 # python-games
 ![GitHub](https://img.shields.io/pypi/v/python-games.svg?label=version&style=flat-square)
 
+A python package with different games. This was something I did for my school project so its not made is the best possible way.
+
 ## Installing
 
 ```
