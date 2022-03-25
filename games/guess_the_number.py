@@ -1,6 +1,6 @@
 from random import randint
 
-class guess():
+class guess_the_number():
     
     def start(guess, range=None):
 
@@ -8,7 +8,7 @@ class guess():
             range = '1-10'
 
         if not '-' in range:
-            return print('You did not enter the right format'), None
+            return None, 'You did not enter the right format'
 
         range = str(range)
 
@@ -18,6 +18,6 @@ class guess():
         number = randint(int(fr),int(to))
 
         if guess == number:
-            return [guess, True]
+            return True, guess
         elif not guess == number:
-            return [guess, False]
+            return True, guess
