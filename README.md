@@ -1,19 +1,19 @@
 # python-games
 ![GitHub](https://img.shields.io/pypi/v/python-games.svg?label=version&style=flat-square)
 
-A python package with different games. This was something I did for my school project so its not made is the best possible way.
+A python package that can do math and have games. This was made as my school project.
 
 ## Installing
 
 ```
 # Linux/macOS
-python3 -m pip install -U python-games
+python3 -m pip install -U python-easy
 
 # Windows
-py -3 -m pip install -U python-games
+py -3 -m pip install -U python-easy
 
 # Github
-pip install git+https://github.com/kevys/python-games.git@main
+pip install git+https://github.com/kevys/python-easy.git@main
 ```
 
 ## Quick Example
