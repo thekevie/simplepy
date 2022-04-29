@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import simplepy
 
@@ -7,14 +7,8 @@ license = simplepy.__license__
 version = simplepy.__version__
 description = simplepy.__description__
 
-with open('README.md') as f:
-    README = f.read()
-
-packages = [
-    'simplepy',
-    'simplepy.math',
-    'simplepy.games',
-]
+with open('README.md') as file:
+    README = file.read()
 
 setup(
     name='simple-py',
@@ -22,7 +16,7 @@ setup(
     url='https://github.com/kevys/simple-py',
     project_urls={"Issues": "https://github.com/kevys/simple-py/issues"},
     version=version,
-    packages=packages,
+    packages=find_packages,
     license=license,
     description=description,
     long_description=README,
