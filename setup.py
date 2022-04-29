@@ -1,24 +1,24 @@
 from setuptools import setup
 
-import games
+import simplepy
 
-author = games.__author__
-license = games.__license__
-version = games.__version__
-description = games.__description__
+author = simplepy.__author__
+license = simplepy.__license__
+version = simplepy.__version__
+description = simplepy.__description__
 
 with open('README.md') as f:
     README = f.read()
 
 packages = [
-    'games',
+    'simple-py',
 ]
 
 setup(
-    name='python-games',
+    name='simple-py',
     author=author,
-    url='https://github.com/kevys/python-games',
-    project_urls={"Issues": "https://github.com/kevys/python-games/issues"},
+    url='https://github.com/kevys/simple-py',
+    project_urls={"Issues": "https://github.com/kevys/simple-py/issues"},
     version=version,
     packages=packages,
     license=license,
