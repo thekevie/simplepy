@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+import setuptools
 
 import simplepy
 
@@ -10,13 +10,13 @@ description = simplepy.__description__
 with open('README.md') as file:
     README = file.read()
 
-setup(
+setuptools.setup(
     name='simple-py',
     author=author,
     url='https://github.com/kevys/simple-py',
     project_urls={"Issues": "https://github.com/kevys/simple-py/issues"},
     version=version,
-    packages=find_packages,
+    packages=setuptools.find_packages(),
     license=license,
     description=description,
     long_description=README,
