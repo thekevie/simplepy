@@ -7,7 +7,7 @@ class percent():
             used_percent = int(round(used_percent))
         return used_percent
     
-    def left(left, total):
+    def left(left, total, output=None):
         left_percent = (int(left)/int(total))*100
         if output == str:
             left_percent = str(round(left_percent))
