@@ -12,6 +12,8 @@ with open('README.md') as f:
 
 packages = [
     'simplepy',
+    'simplepy.math',
+    'simplepy.games',
 ]
 
 setup(
