@@ -11,7 +11,7 @@ with open('README.md') as f:
     README = f.read()
 
 packages = [
-    'simple-py',
+    'simplepy',
 ]
 
 setup(
