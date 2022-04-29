@@ -1,5 +1,5 @@
 """
-simple-py package
+simplepy package
 """
 
 __author__ = 'thekevie'
