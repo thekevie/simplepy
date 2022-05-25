@@ -1,23 +1,20 @@
 from random import randint
-
-class guess_the_number():
+from ..convert import convert
     
-    def start(guess, range=None):
+def guess_the_number(guess, range = None):
 
-        if range is None:
-            range = '1-10'
+    if range is None:
+        range = '1-100'
 
-        if not '-' in range:
-            return None, 'You did not enter the right format'
+    if not '-' in range:
+        return raise TypeError("{0} is a invalid format".format(range))
 
-        range = str(range)
+    fr, to = range.split('-')
 
-        fr, to = range.split('-')
+    guess = convert(guess, to=int)
+    number = randint(int(fr),int(to))
 
-        guess = int(guess)
-        number = randint(int(fr),int(to))
-
-        if guess == number:
-            return True, guess
-        elif not guess == number:
-            return True, guess
+    if guess == number:
+        return True, guess
+    elif not guess == number:
+        return False, number
